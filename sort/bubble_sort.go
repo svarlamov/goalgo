@@ -11,9 +11,9 @@ func BubbleDsc(arr Comparable) {
 func bubble(arr Comparable, dsc bool) {
 	for i := 0; i < arr.Len(); i++ {
 		for j := 0; j < arr.Len()-1; j++ {
-			if arr.Less(j, j+1) == true && dsc == true {
+			if arr.Less(j, j+1) == dsc {
 				arr.Swap(j, j+1)
-			} else if arr.Less(j, j+1) == false && dsc == false {
+			} else if arr.Less(j, j+1) == dsc {
 				arr.Swap(j, j+1)
 			}
 		}
