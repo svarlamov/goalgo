@@ -13,8 +13,6 @@ func bubble(arr Comparable, dsc bool) {
 		for j := 0; j < arr.Len()-1; j++ {
 			if arr.Less(j, j+1) == dsc {
 				arr.Swap(j, j+1)
-			} else if arr.Less(j, j+1) == dsc {
-				arr.Swap(j, j+1)
 			}
 		}
 	}
